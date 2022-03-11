@@ -1,0 +1,87 @@
+// Primaire color
+$lightCyan: hsl(193, 38%, 86%);
+$neonGreen: hsl(150, 100%, 66%);
+// Primaire color
+
+// Neutre
+$grayishBlue: hsl(217, 19%, 38%);
+$darkGrayishBlue: hsl(217, 19%, 24%);
+// Neutre
+
+// Police
+
+// Police
+
+.bigContain {
+    background: $darkGrayishBlue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    .container {
+        background: $grayishBlue;
+        width: 33%;
+        border-radius: 0.5rem;
+        height: 50%;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    }
+    .containerAdvice {
+        color: white;
+        font-size: 28px;
+        max-height: 150px;
+        min-height: 100px;
+        margin-top: 0;
+    }
+    .title {
+        color: $neonGreen;
+        font-size: 1rem;
+        margin-top: 8%;
+    }
+    .bigScreen{
+        margin-top: 5%;
+    }
+    .littleScreen{
+        display: none;
+    }
+
+    .logo {
+        background-color: $neonGreen;
+        border-radius: 50%;
+        border: none;
+        position: relative;
+        top: 22px;
+        line-height: 58px;
+        height: 48px;
+        width: 48px;
+
+        &:hover {
+            box-shadow: 2px 4px 38px 10px $neonGreen;
+        }
+    }
+
+    @media screen and (max-width: 600px) {
+        .container {
+            width: 300px;
+        }
+        .containerAdvice {
+            color: white;
+            font-size: 15px;
+            max-height: 100px;
+            min-height: 100px;
+            max-width: 90%;
+            margin-top: 0;
+        }
+
+        .bigScreen{
+            display: none;
+        }
+        .littleScreen{
+            margin-top: 10%;
+            display: block;
+        }
+    }
+}
